@@ -62,14 +62,15 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/aalto/proprietary/keychars/sec_key.kcm.bin:system/usr/keychars/sec_key.kcm.bin \
     vendor/samsung/aalto/proprietary/keychars/sec_touchscreen.kcm.bin:system/usr/keychars/sec_touchscreen.kcm.bin
 
-# Wifi firmware (modules are built from source)
+# wifi
 PRODUCT_COPY_FILES += \
-    vendor/samsung/aalto/proprietary/wifi/firmware/wl127x-fw-4-mr.bin:system/etc/firmware/ti-connectivity/wl127x-fw-4-mr.bin \
-    vendor/samsung/aalto/proprietary/wifi/firmware/wl127x-fw-4-plt.bin:system/etc/firmware/ti-connectivity/wl127x-fw-4-plt.bin \
-    vendor/samsung/aalto/proprietary/wifi/firmware/wl127x-fw-4-sr.bin:system/etc/firmware/ti-connectivity/wl127x-fw-4-sr.bin \
-    vendor/samsung/aalto/proprietary/wifi/firmware/wl1271-nvs_127x.bin:system/etc/firmware/ti-connectivity/wl1271-nvs_127x.bin \
-    vendor/samsung/aalto/proprietary/wifi/firmware/wl1271-fw-multirole-plt.bin:system/etc/firmware/ti-connectivity/wl1271-fw-multirole-plt.bin \
-    vendor/samsung/aalto/proprietary/wifi/firmware/wl1271-fw-multirole-roc.bin:system/etc/firmware/ti-connectivity/wl1271-fw-multirole-roc.bin
+    vendor/samsung/aalto/proprietary/wifi/bin/tiap_cu:system/bin/tiap_cu \
+    vendor/samsung/aalto/proprietary/wifi/bin/tiap_loader:system/bin/tiap_loader \
+    vendor/samsung/aalto/proprietary/wifi/bin/tiwlan_cu:system/bin/tiwlan_cu \
+    vendor/samsung/aalto/proprietary/wifi/bin/tiwlan_loader:system/bin/tiwlan_loader \
+    vendor/samsung/aalto/proprietary/wifi/bin/tiwlan_plts:system/bin/tiwlan_plts \
+    vendor/samsung/aalto/proprietary/wifi/bin/wpa_supplicant:system/bin/wpa_supplicant
+
 
 # ril
 PRODUCT_COPY_FILES += \
