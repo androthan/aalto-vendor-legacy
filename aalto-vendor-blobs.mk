@@ -45,16 +45,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/samsung/aalto/proprietary/baseimage/lib/dsp,system/lib/dsp)
 
-#omx
-PRODUCT_COPY_FILES += \
-    vendor/samsung/aalto/proprietary/omx/lib/libOMX.TI.720P.Decoder.so:system/lib/libOMX.TI.720P.Decoder.so \
-    vendor/samsung/aalto/proprietary/omx/lib/libOMX.TI.720P.Encoder.so:system/lib/libOMX.TI.720P.Encoder.so \
-    vendor/samsung/aalto/proprietary/omx/lib/libOMX.TI.h264.splt.Encoder.so:system/lib/libOMX.TI.h264.splt.Encoder.so \
-    vendor/samsung/aalto/proprietary/omx/lib/libOMX.TI.mp4.splt.Encoder.so:system/lib/libOMX.TI.mp4.splt.Encoder.so \
-    vendor/samsung/aalto/proprietary/omx/lib/libOMX.ITTIAM.AAC.decode.so:system/lib/libOMX.ITTIAM.AAC.decode.so \
-    vendor/samsung/aalto/proprietary/omx/lib/libOMX.ITTIAM.AAC.encode.so:system/lib/libOMX.ITTIAM.AAC.encode.so \
-#    vendor/samsung/aalto/proprietary/omx/lib/librotation.so:system/lib/librotation.so 
-
 # keychars
 PRODUCT_COPY_FILES += \
     vendor/samsung/aalto/proprietary/keychars/qwerty2.kcm.bin:system/usr/keychars/qwerty2.kcm.bin \
@@ -84,7 +74,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/samsung/aalto/proprietary/sensors/bin/geomagneticd:system/bin/geomagneticd \
     vendor/samsung/aalto/proprietary/sensors/bin/orientationd:system/bin/orientationd \
-    vendor/samsung/aalto/proprietary/sensors/bin/memsicd:system/bin/memsicd
+    vendor/samsung/aalto/proprietary/sensors/bin/memsicd:system/bin/memsicd \
+    vendor/samsung/aalto/proprietary/sensors/lib/sensors.aalto.so:system/lib/sensors.aalto.so
 
 # omx
 PRODUCT_COPY_FILES += \
