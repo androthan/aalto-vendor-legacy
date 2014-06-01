@@ -84,6 +84,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/samsung/aalto/proprietary/sensors/bin/geomagneticd:system/bin/geomagneticd \
     vendor/samsung/aalto/proprietary/sensors/bin/orientationd:system/bin/orientationd \
+    vendor/samsung/aalto/proprietary/sensors/bin/memsicd:system/bin/memsicd
 
 # bluetooth
 PRODUCT_COPY_FILES += \
